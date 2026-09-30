@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Grievance Redressal System Awareness</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f8fc;color:#222;line-height:1.6}
+header{background:linear-gradient(135deg,#075985,#0ea5e9);color:white;padding:22px 7%;position:sticky;top:0;z-index:10}
+.header-row{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:22px;font-weight:bold}
+nav a{color:white;text-decoration:none;margin-left:18px;font-weight:bold;font-size:14px}
+nav a:hover{text-decoration:underline}
+.hero{padding:75px 7%;background:linear-gradient(135deg,#e0f2fe,#ffffff)}
+.hero-content{max-width:900px}
+.hero h1{font-size:42px;color:#075985;margin-bottom:15px}
+.hero p{font-size:18px;margin-bottom:25px}
+.btn{display:inline-block;background:#075985;color:white;text-decoration:none;border:0;border-radius:7px;padding:12px 20px;font-weight:bold;cursor:pointer;margin-right:8px}
+.btn:hover{background:#0c4a6e}
+.btn-light{background:white;color:#075985;border:1px solid #075985}
+section{padding:55px 7%}
+.section-title{text-align:center;color:#075985;font-size:30px;margin-bottom:10px}
+.section-sub{text-align:center;margin-bottom:30px;color:#555}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.card{background:white;padding:23px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.08);border-left:5px solid #0ea5e9}
+.card h3{color:#075985;margin-bottom:8px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.step{background:white;border-radius:12px;padding:22px;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.number{width:38px;height:38px;border-radius:50%;background:#075985;color:white;display:flex;align-items:center;justify-content:center;font-weight:bold;margin-bottom:12px}
+.form-box{max-width:850px;margin:auto;background:white;padding:28px;border-radius:12px;box-shadow:0 3px 14px rgba(0,0,0,.08)}
+label{display:block;font-weight:bold;margin:13px 0 5px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #bbb;border-radius:6px;font-size:15px}
+textarea{min-height:100px;resize:vertical}
+.success{display:none;margin-top:15px;padding:12px;background:#dcfce7;color:#166534;border-radius:6px}
+.survey-box{background:#e0f2fe;border-radius:14px;padding:30px;text-align:center;max-width:850px;margin:auto}
+.result-box{max-width:900px;margin:auto;background:white;padding:28px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.bar{margin:18px 0}
+.bar-label{display:flex;justify-content:space-between;margin-bottom:5px}
+.track{height:22px;background:#e5e7eb;border-radius:20px;overflow:hidden}
+.fill{height:100%;background:#0ea5e9}
+.note{background:#fff7ed;border-left:4px solid #f97316;padding:13px;margin-top:18px}
+footer{background:#082f49;color:white;text-align:center;padding:28px 7%}
+@media(max-width:800px){
+ .header-row{flex-direction:column;align-items:flex-start}
+ nav a{margin:0 12px 0 0;display:inline-block}
+ .hero h1{font-size:32px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-row">
+    <div class="logo">Online Grievance Awareness</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#types">Grievances</a>
+      <a href="#steps">How It Works</a>
+      <a href="#complaint">Demo</a>
+      <a href="#survey">Survey</a>
+      <a href="#results">Results</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Online Grievance Redressal System Awareness</h1>
+    <p>Learn how citizens can register, track and follow up on complaints through online grievance redressal systems.</p>
+    <a class="btn" href="#about">Learn More</a>
+    <a class="btn btn-light" href="#survey">Take Survey</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About the Project</h2>
+  <p class="section-sub">Community Engagement Project (CEP)</p>
+  <div class="cards">
+    <div class="card"><h3>What is a Grievance?</h3><p>A grievance is a complaint or problem reported by a citizen about a public service or government service.</p></div>
+    <div class="card"><h3>What is Online Redressal?</h3><p>It is a digital method that allows people to submit complaints online and receive updates about their complaints.</p></div>
+    <div class="card"><h3>Project Objective</h3><p>To create awareness about online grievance systems and help citizens understand the basic complaint registration process.</p></div>
+    <div class="card"><h3>Citizen Support</h3><p>The website provides simple information and a demo complaint form for educational purposes.</p></div>
+  </div>
+</section>
+
+<section id="types">
+  <h2 class="section-title">Types of Grievances</h2>
+  <p class="section-sub">Common problems that citizens may report</p>
+  <div class="cards">
+    <div class="card"><h3>Roads & Potholes</h3><p>Problems related to damaged roads, potholes and unsafe public roads.</p></div>
+    <div class="card"><h3>Water Supply</h3><p>Water shortage, leakage or other public water supply issues.</p></div>
+    <div class="card"><h3>Garbage & Sanitation</h3><p>Uncollected garbage, cleanliness and sanitation-related problems.</p></div>
+    <div class="card"><h3>Streetlights</h3><p>Non-working or damaged streetlights in public areas.</p></div>
+    <div class="card"><h3>Health Services</h3><p>Problems related to public health services and facilities.</p></div>
+    <div class="card"><h3>Education</h3><p>Issues related to public educational services and facilities.</p></div>
+    <div class="card"><h3>Government Services</h3><p>Problems related to public offices and government services.</p></div>
+  </div>
+</section>
+
+<section id="steps">
+  <h2 class="section-title">How to Register a Complaint</h2>
+  <p class="section-sub">Basic steps for using an online grievance system</p>
+  <div class="steps">
+    <div class="step"><div class="number">1</div><h3>Visit the Portal</h3><p>Open the official online grievance portal provided by the concerned authority.</p></div>
+    <div class="step"><div class="number">2</div><h3>Register / Login</h3><p>Create an account or log in if the portal requires registration.</p></div>
+    <div class="step"><div class="number">3</div><h3>Select Category</h3><p>Choose the appropriate category for your complaint.</p></div>
+    <div class="step"><div class="number">4</div><h3>Enter Details</h3><p>Provide the location and a clear description of the problem.</p></div>
+    <div class="step"><div class="number">5</div><h3>Upload Evidence</h3><p>If permitted, upload a relevant photograph or document.</p></div>
+    <div class="step"><div class="number">6</div><h3>Submit & Track</h3><p>Submit the complaint and save the complaint/reference number for tracking.</p></div>
+  </div>
+</section>
+
+<section id="complaint">
+  <h2 class="section-title">Complaint Demo</h2>
+  <p class="section-sub">This is an educational demonstration form. It does not send a real government complaint.</p>
+  <div class="form-box">
+    <form id="demoForm">
+      <label for="name">Name</label>
+      <input id="name" required placeholder="Enter your name">
+
+      <label for="mobile">Mobile Number</label>
+      <input id="mobile" required inputmode="numeric" pattern="[0-9]{10}" placeholder="10-digit mobile number">
+
+      <label for="category">Complaint Category</label>
+      <select id="category" required>
+        <option value="">Select category</option>
+        <option>Roads / Potholes</option>
+        <option>Water Supply</option>
+        <option>Garbage / Sanitation</option>
+        <option>Streetlights</option>
+        <option>Health Services</option>
+        <option>Education</option>
+        <option>Government Services</option>
+        <option>Other</option>
+      </select>
+
+      <label for="location">Location</label>
+      <input id="location" required placeholder="Enter location">
+
+      <label for="description">Problem Description</label>
+      <textarea id="description" required placeholder="Describe the problem"></textarea>
+
+      <label for="photo">Photo (optional demo)</label>
+      <input id="photo" type="file" accept="image/*">
+
+      <br><br>
+      <button class="btn" type="submit">Submit Demo Complaint</button>
+    </form>
+    <div class="success" id="demoSuccess"></div>
+  </div>
+</section>
+
+<section id="survey">
+  <h2 class="section-title">Community Awareness Survey</h2>
+  <p class="section-sub">Help us understand awareness about online grievance redressal systems.</p>
+  <div class="survey-box">
+    <h3>Online Grievance Redressal System Awareness Survey</h3>
+    <p style="margin:12px 0 20px">This survey is part of a Community Engagement Project and is intended for academic purposes.</p>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScUHi1Ojx3F5tLBI0W6-wxZn4riLTj8_SO0vQ3zfxZbeDgjsw/viewform?pli=1&pli=1" target="_blank" rel="noopener">Open Google Survey</a>
+    <p style="margin-top:15px;font-size:13px">If your Google Form link changes, replace the link in this button with your new responder link.</p>
+  </div>
+</section>
+
+<section id="results">
+  <h2 class="section-title">Survey Results</h2>
+  <p class="section-sub">Enter your actual survey data here after collecting responses.</p>
+  <div class="result-box">
+    <div class="bar">
+      <div class="bar-label"><span>People aware of online grievance systems</span><strong>Update with actual %</strong></div>
+      <div class="track"><div class="fill" style="width:50%"></div></div>
+    </div>
+    <div class="bar">
+      <div class="bar-label"><span>People who have used an online grievance system</span><strong>Update with actual %</strong></div>
+      <div class="track"><div class="fill" style="width:35%"></div></div>
+    </div>
+    <div class="bar">
+      <div class="bar-label"><span>People who want more awareness</span><strong>Update with actual %</strong></div>
+      <div class="track"><div class="fill" style="width:75%"></div></div>
+    </div>
+    <div class="note"><strong>Important:</strong> The percentages shown above are only placeholders for website design. Replace them with your real Google Forms/Google Sheets results before submitting the CEP project.</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Project Conclusion</h2>
+  <div class="result-box">
+    <p>Online grievance redressal systems can provide a convenient digital channel for reporting public-service problems. Awareness is important because citizens need to know where to register complaints, what information to provide and how to track a complaint. This CEP website is designed to explain these steps in simple language and encourage informed use of online grievance services.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p><strong>Online Grievance Redressal System Awareness</strong></p>
+  <p>Community Engagement Project (CEP) | B.Sc. IT</p>
+  <p style="margin-top:8px;font-size:13px">Educational project website</p>
+</footer>
+
+<script>
+document.getElementById("demoForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const id = "GRV-" + Math.floor(100000 + Math.random() * 900000);
+  const box = document.getElementById("demoSuccess");
+  box.style.display = "block";
+  box.innerHTML = "<strong>Demo complaint submitted successfully!</strong><br>Your demo reference number is <strong>" + id + "</strong>.<br><small>This is only a project demonstration; no real complaint was sent.</small>";
+  this.reset();
+});
+</script>
+</body>
+</html>
